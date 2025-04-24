@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Företag - Freya Photos - Fotograf i Stockholm</title>
+    <meta name="description" content="När ni behöver bilder som berättar en historia, är jag här för att fånga både känslan och budskapet på bild. Jag erbjuder professionell företagsfotografering som fungerar för både digitala och tryckta medier.">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  </head>
+<body>
+
+  <header>
+    <div class="logo-text">
+      <a href="index.html" aria-label="Freya Photos startsida">Freya Photos</a>
+    </div>
+<!-- Mobilmeny-checkbox -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-hidden="true">
+<!-- Etiketter för öppna/stäng meny -->   
+    <label for="menu-toggle" class="menu-toggle" aria-label="Öppna meny">
+      <span class="menu-open" aria-hidden="true">☰</span>
+      <span class="menu-close" aria-hidden="true">✖</span>
+    </label>
+
+<!-- NAV START -->
+<nav class="navbar" aria-label="Huvudmeny">
+  <a href="index.html">Startsida</a>
+  <a href="om-mig.html">Om mig</a>
+
+<!-- Dropdown 1 -->
+<div class="subnav">
+  <button class="subnavbtn" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-foto" tabindex="0">
+    Fotograferingar
+    <span class="material-symbols-outlined dropdown" aria-hidden="true">arrow_drop_down</span>
+  </button>
+  <div class="subnav-content" id="submenu-foto">
+    <ul>
+      <li><a href="barn-och-familj.html">Barn- och familj</a></li>
+      <li><a href="brollop.html">Bröllop</a></li>
+      <li><a href="portratt.html">Porträtt</a></li>
+      <li><a href="foretag.html" class="active">Företag</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Dropdown 2 -->
+    <div class="subnav">
+      <button class="subnavbtn" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-info" tabindex="0">
+        Info
+        <span class="material-symbols-outlined dropdown" aria-hidden="true">arrow_drop_down</span>
+      </button>
+      <div class="subnav-content" id="submenu-info">
+        <ul>
+          <li><a href="priser.html">Priser</a></li>
+          <li><a href="vanliga-fragor.html">Vanliga frågor</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <a href="kontakt-boka.html">Kontakt | Boka</a>
+  </nav>
+<!-- NAV SLUT -->
+
+ <!--Overlay -->
+<div class="background-overlay background-overlay-foretag" aria-hidden="true"></div>
+
+</header>
+<!-- HEADER SLLUT -->
+
+<!-- INNEHÅLL START -->
+
+<main id="main-content">
+  <div class="foretag">
+  <!-- TOP ANKARE -->
+        <div id="top"></div>
+        <div class="foretag-hero">
+        <h1 tabindex="0">Företag Tidning</h1>
+        <h2>Berättelser bakom rubrikerna</h2>
+      </div>
+
+      <div class="foretag-presentation">
+        <div class="slider">
+          <!-- Radio-knappar -->
+          <input type="radio" name="slider" id="slide1" checked>
+          <input type="radio" name="slider" id="slide2">
+          <input type="radio" name="slider" id="slide3">
+          <input type="radio" name="slider" id="slide4">
+          <input type="radio" name="slider" id="slide5">
+        
+          <!-- Bilder -->
+          <div class="slides">
+            <div class="slide" id="s1">
+              <img src="media/foretag-slide-1.webp" alt="Porträtt 1">
+            </div>
+            <div class="slide" id="s2">
+              <img src="media/foretag-slide-2.webp" alt="Porträtt 2">
+            </div>
+            <div class="slide" id="s3">
+              <img src="media/foretag-slide-3.webp" alt="Porträtt 3">
+            </div>
+            <div class="slide" id="s4">
+              <img src="media/foretag-slide-4.webp" alt="Porträtt 3">
+            </div>
+            <div class="slide" id="s5">
+              <img src="media/foretag-slide-5.webp" alt="Porträtt 3">
+            </div>
+          </div>
+        
+          <!-- Navigation -->
+          <div class="slide-navigation">
+            <label for="slide1" class="slide-nav"></label>
+            <label for="slide2" class="slide-nav"></label>
+            <label for="slide3" class="slide-nav"></label>
+            <label for="slide4" class="slide-nav"></label>
+            <label for="slide5" class="slide-nav"></label>
+          </div>
+        </div>
+
+        <div class="infobox">
+        <p>När jag fotar för företag eller media tar jag med mig samma lyhördhet och blick för det äkta. Jag har vana av att arbeta självständigt, under tidspress och med olika typer av människor och miljöer.
+
+          Det kan handla om att skapa bilder för ert varumärke, fotografera anställda i vardagen eller dokumentera ett viktigt event. Eller om att ta porträtt till en artikel, fånga en berättelse i bild eller leverera redaktionellt material med känsla och kvalitet.
+          
+          Jag jobbar snabbt, diskret och alltid med ett journalistiskt öga för det som berättar något på riktigt.</p>
+      
+      
+        <em>"Du lyckades få personen bakom intervjun att lysa på bild. Det gav en helt annan känsla till reportaget."
+
+          "Freya är en fotograf som ser detaljer andra missar. Hennes bilder är alltid fulla av liv och närvaro."
+          
+          "Vi har samarbetat flera gånger och jag vet att jag alltid får bilder med känsla – inte bara ett foto, utan ett berättande."</em>
+        
+        <p>Letar ni efter en fotograf som levererar på deadline? Det fixar jag.
+
+          Reportagefoto, porträtt eller miljöbilder – säg vad ni behöver så löser vi det.
+        </p>
+      </div>
+      </div>
+    </main>
+
+      <a href="#top" class="back-to-top">
+        <span class="material-symbols-outlined">
+          arrow_upward
+          </span>
+          Till toppen
+      </a>
+</div>
+
+</body>
+</html>
