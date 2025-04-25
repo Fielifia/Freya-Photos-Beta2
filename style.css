@@ -1895,7 +1895,7 @@ navbar a {
     .kontakt-boka {
       padding: 90px 2%;
     }
-}
+  }
 
 /* Beteende & utseende när fönstret/skärmen är mindre än 600px */
 @media all and (max-width: 600px){
@@ -1929,7 +1929,8 @@ navbar a {
 /* KONTAKT - BOKA FORMULÄR */
 .label-input-kontakt,
 .arende-kontakt,
-.meddelande-label-kontakt, .aterkoppling-kontakt,
+.meddelande-label-kontakt,
+  .aterkoppling-kontakt,
 .send-kontakt {
   display: flex; /* Flexbox */
   flex-direction: column; /* Stapla innnehållet vertikalt */  
@@ -1948,38 +1949,95 @@ navbar a {
   }
 /* TILLBAKA UPP-KNAPP */
 .back-to-top {
-  font-size: 0; /* Storlek på text */
-  padding: 0; /* Utrymme runt text */
+  font-size: .4rem; /* Storlek på text */
+  bottom: 1rem;
+  right: 1rem;  
+  padding: 0.2rem; /* Utrymme runt text */
 }
 /* Utseende för pilen i knappen */
 .back-to-top span {
   position: relative; /* Positionera relativt */
-  font-size: 0.8rem; /* Storlek på text */  
-  left: 0.6rem; /* Avstånd från vänster kant av element */
-  padding: 0.2rem 0; /* Utrymme runt */
+  margin-top: 1px;
+  font-size: 0.4rem; /* Storlek på text */
 }
-.back-to-top:hover {
-  color:#000;
+.back-to-top:hover, .back-to-top:hover span {
+  color: #000;
 }
-
+  /* FOOTER */
+  .footer-lankar {
+    flex-direction: column;
+    padding: 0 0 1rem 1rem;
+  }
+  #footer-lank {
+    text-align: left;
+    margin: .2rem ;
+  }
+  .footer-active { 
+    width: fit-content;
+}
+  
+}
 /* #endregion */
 
 
 @media screen and (max-width: 480px) {
-h1 {
+h1, .info-text h2 {
   text-align: center;
   font-size: 1.3rem;
 }
-.index h6 {
+.index h6, 
+  .brollop-beskrivning h3, 
+  .brollop-beskrivning strong,
+.kunder h3,  
+  .kunder-portratt h3,
+.kunder-brollop h3  {
   font-size: 0.9rem;
 }
-.index p, .portratt-presentation h4 {
+  .portratt-presentation h4 {
   font-size: 0.7rem;
 }
-.om-mig-hero a,.horavdig p, .barn-och-familj a, .brollop a {
+  .info-och-priser {
+    padding: 1rem;
+    margin: 0;
+  }
+  #kundberattelser-heading {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .kunder h3,
+  .kunder h4,
+  .kunder-portratt h3, 
+  .kunder-portratt h4,
+  .kunder-brollop h3,
+.kunder-brollop h4  {
+    margin: 0;
+  }
+  .content.left h3, 
+  .content.right h3, 
+  .kunder h4,
+  .kunder-portratt h4, 
+  .kunder-brollop h4 {
+    font-size: 1.2rem;
+  }
+.index p, 
+  .info-text p, 
+  .om-mig-hero a, 
+  .horavdig p, 
+  .content-wrapper p, 
+  .barn-och-familj a,
+.brollop-beskrivning p,  
+  .brollop a, 
+  .kunder-brollop p, 
+.kunder-portratt p, 
+.infobox p,
+.infobox em  {
   font-size: 0.8rem;
 }
-.portratt-presentation h3 {
+  .info-text p {
+    padding: 0;
+    margin: 1rem 0.2rem;
+  }
+.portratt-info h3 {
   font-size: 1.4rem;
 }
   .boka-portratt {
