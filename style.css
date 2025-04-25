@@ -1895,6 +1895,11 @@ navbar a {
     .kontakt-boka {
       padding: 90px 2%;
     }
+
+/* FOOTER */
+.FOOTER {
+flex-direction: column;
+align-content: left;
   }
 
 /* Beteende & utseende när fönstret/skärmen är mindre än 600px */
