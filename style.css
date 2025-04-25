@@ -1895,12 +1895,7 @@ navbar a {
     .kontakt-boka {
       padding: 90px 2%;
     }
-
-/* FOOTER */
-.FOOTER {
-flex-direction: column;
-align-content: left;
-  }
+}
 
 /* Beteende & utseende när fönstret/skärmen är mindre än 600px */
 @media all and (max-width: 600px){
@@ -1966,7 +1961,7 @@ align-content: left;
 .back-to-top:hover {
   color:#000;
 }
-}
+
 /* #endregion */
 
 
